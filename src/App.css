@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.country{
+  display: inline-block;
+  background-color: #282c34;
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+}
+.country img{
+  width: 200px;
+  height: 100px;
+}

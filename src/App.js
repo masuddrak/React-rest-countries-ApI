@@ -21,6 +21,18 @@ function LoadCountries(){
     <div>
       <h2>World Visiting Countries !!!</h2>
       <h3>Total Countries:{countries.length}</h3>
+      {
+        countries.map(country=><Country name={country.name.common} population={country.population} flags={country.flags.png}></Country>)
+      }
+    </div>
+  )
+}
+function Country(props){
+  return (
+    <div className='country'>
+      <img src={props.flags} alt="" />
+      <h2>Name:{props.name}</h2>
+      <p>Population:{props.population}</p>
     </div>
   )
 }
